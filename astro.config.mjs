@@ -7,11 +7,9 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://asipple1.github.io",
-  base: "dan-sepulveda",
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwindcss()]
   },
 
-  integrations: [icon()],
+  integrations: [icon()]
 });
