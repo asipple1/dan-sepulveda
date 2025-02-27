@@ -2,7 +2,7 @@
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 import { mainNavigation } from "../data/navigation";
-// import logo from "../assets/logo/logoWhite.png";
+import logo from "../assets/logo/logoWhite.png";
 const currentPath = Astro.url.pathname;
 const isActive = (path) => (currentPath === path ? "cs-active" : "");
 ---
@@ -107,14 +107,14 @@ const isActive = (path) => (currentPath === path ? "cs-active" : "");
   <div class="cs-container">
     <div class="cs-top">
       <a aria-label="go back to home" class="cs-logo" href="/">
-        <!-- <Image
+        <Image
           class="cs-logo-img"
           src={logo}
           alt="The broker logo"
           width={400}
           loading="lazy"
           decoding="async"
-        /> -->
+        />
       </a>
       <ul class="cs-ul">
         {
