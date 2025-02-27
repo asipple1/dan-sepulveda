@@ -1,6 +1,6 @@
 export const mainNavigation = [
-  { name: "About", path: "/about" },
-  { name: "Services", path: "/services" },
+  { name: "About", path: "/about/" },
+  { name: "Services", path: "/services/" },
   // {
   //   name: "Listings",
   //   isDropdown: true,
@@ -9,6 +9,6 @@ export const mainNavigation = [
   //     { name: "Commercial", path: "/listings/commercial" },
   //   ],
   // },
-  { name: "Blog", path: "/blog" },
-  { name: "Contact", path: "/contact" },
+  { name: "Blog", path: "/blog/" },
+  { name: "Contact", path: "/contact/" },
 ];

@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@config "../../tailwind.config.js";
 
 @theme {
   --primary: #5c9622;
@@ -36,6 +38,7 @@
 
   /* Section padding */
   --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  --padding-section: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
 
 /* font-family: 'Montserrat Variable', sans-serif; */
@@ -113,4 +116,9 @@ body {
   left: 0;
   z-index: -1;
   transition: width 0.3s;
+}
+
+.cs-container {
+  max-width: 80rem;
+  margin: auto;
 }

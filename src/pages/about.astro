@@ -1,11 +1,50 @@
 ---
 import HeroSmall from "../components/Hero/HeroSmall.astro";
 import Layout from "../layouts/Layout.astro";
+import AboutImage from "../assets/background-images/honolulubg.jpg";
 ---
 
 <Layout>
   <HeroSmall
-    title="about"
-    altText="hey"
+    title="About"
+    imagePath={AboutImage}
+    altText="welcome to the about page"
   />
+  <article class="p-section">
+    <div class="cs-container prose">
+      <h3>Meet Dan - Your Trusted Real Estate Expert</h3>
+      <p>
+        As a former <strong>Navy Chief</strong>, Dan brings <em
+          >discipline, integrity</em
+        >, and a commitment to service to every real estate transaction. With
+        years of experience as both a <a href="#">licensed mortgage broker</a> and
+        <a href="#">real estate agent</a>, he offers a unique advantage—helping
+        clients buy, sell, and finance their dream homes all in one place.
+      </p>
+
+      <h4>Buying, Selling, and Financing – All in One</h4>
+      <p>
+        Whether you're a <a href="#">first-time homebuyer</a>, a <a href="#"
+          >military family</a
+        > using VA benefits, or an <a href="#">investor</a> looking for the perfect
+        property, Dan’s expert guidance makes the process seamless and stress-free.
+      </p>
+
+      <h5>Why Choose Dan?</h5>
+      <p>
+        With deep knowledge of the Oahu market and years of hands-on experience,
+        Dan provides tailored strategies for buyers and sellers alike. His
+        mission is to help clients achieve their real estate goals while
+        ensuring smooth transactions from start to finish.
+      </p>
+
+      <h6>Get Started Today</h6>
+      <p>
+        Ready to find your dream home or sell your property? <a href="#"
+          >Contact Dan</a
+        > today to schedule a consultation and take the first step toward your real
+        estate success.
+      </p>
+    </div>
+  </article>
 </Layout>
