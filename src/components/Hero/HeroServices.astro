@@ -1,0 +1,464 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+
+import HeadShotDan from "../../assets/dan/headshot1.png";
+import BGImage from "../../assets/background-images/honolulubg.jpg";
+
+const topper = "Get fast quotes and great rates!";
+const headline = "Fast & Reliable Mortgage Solutions – Dan Sepulveda";
+const description =
+  "Experience personalized mortgage lending with Dan Sepulveda at The Broker Mortgage Experts.";
+---
+
+<section id="hero-1298">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">{topper}</span>
+      <h1 class="cs-title">
+        {headline}
+      </h1>
+      <p class="cs-text">
+        {description}
+      </p>
+      <a href="" class="cs-button-solid">Get Your Free Quote</a>
+    </div>
+    <Image
+      src={HeadShotDan}
+      alt="Dan Sepulveda"
+      loading="eager"
+      decoding="async"
+      width={468}
+      height={658}
+      class="cs-picture"
+      sizes="(max-width: 600px) 468px, (min-width: 601px) 468px"
+    />
+  </div>
+  <div class="cs-container">
+    <ul class="cs-card-group">
+      <li class="cs-item shadow">
+        <a href="" class="cs-link">
+          <Icon
+            name="mdi:note-edit-outline"
+            width={45}
+            height={45}
+            class="cs-icons text-primary"
+          />
+          <h3 class="cs-h3">Personalized Solutions</h3>
+          <p class="cs-item-text">
+            Receive custom mortgage advice tailored to your unique financial
+            needs.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item shadow">
+        <a href="" class="cs-link">
+          <Icon
+            name="mdi:rocket-outline"
+            width={45}
+            height={45}
+            class="cs-icons text-primary"
+          />
+          <h3 class="cs-h3">Fast, Custom Quotes</h3>
+          <p class="cs-item-text">
+            Experience quick, no-obligation mortgage quotes designed for your
+            lifestyle.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item shadow">
+        <a href="" class="cs-link">
+          <Icon
+            name="mdi:chart-line"
+            width={45}
+            height={45}
+            class="cs-icons text-primary"
+          />
+          <h3 class="cs-h3">Competitive Rates</h3>
+          <p class="cs-item-text">
+            Access some of the best mortgage rates available to maximize your
+            savings.
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="cs-background">
+    <video
+      class="cs-video-background lazy-video"
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="none"
+    >
+      <source
+        data-src="/video/beach-white-sand-shoreline.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <Image
+      src={BGImage}
+      alt="Image of honolulu"
+      alt="buildings"
+      width={1280}
+      widths={[640, 1280, 1920]}
+      height={568}
+      loading="eager"
+      decoding="async"
+      sizes="(max-width: 640px) 640px, (max-width: 1280px) 1280px, 1920px"
+    />
+  </div>
+</section>
+
+<div class="pt-[32.5rem] md:pt-[12.5rem]"></div>
+
+<style>
+  /*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #hero-1298 {
+      /* 150px - 350px */
+      padding: clamp(9rem, 30.95vw, 16rem) 1rem;
+      padding-bottom: 0;
+      position: relative;
+    }
+    #hero-1298 .cs-container {
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 7vw, 4rem);
+    }
+    #hero-1298 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+    #hero-1298 .cs-topper {
+      font-size: var(--topperFontSize);
+      line-height: 1.2em;
+      text-transform: uppercase;
+      text-align: inherit;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+      display: block;
+      background-color: var(--bodyTextColorWhite);
+      padding: 0.4rem;
+    }
+    #hero-1298 .cs-title {
+      /* 39px - 61px */
+      font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+      font-weight: 900;
+      line-height: 1.2em;
+      width: 100%;
+      max-width: 17ch;
+      margin: 0 0 1rem;
+      color: var(--bodyTextColorWhite);
+      position: relative;
+      text-shadow: 0px 0px 6px #000000;
+    }
+    #hero-1298 .cs-text {
+      /* 16px - 20px */
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      line-height: 1.5em;
+      width: 100%;
+      max-width: 43.75rem;
+      /* 28px - 40px */
+      margin: 0 0 clamp(1.75rem, 4vw, 2.5rem);
+      color: var(--bodyTextColorWhite);
+    }
+    #hero-1298 .cs-button-solid {
+      font-size: 1rem;
+      text-align: center;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      width: 11.25rem;
+      text-decoration: none;
+      font-weight: 700;
+      /* clips corners of the before element */
+      overflow: hidden;
+      margin: 0;
+      color: #fff;
+      padding: 0;
+      background-color: var(--primary);
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      transition: color 0.3s;
+    }
+    #hero-1298 .cs-button-solid:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: #000;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s;
+    }
+    #hero-1298 .cs-button-solid:hover {
+      color: #fff;
+    }
+    #hero-1298 .cs-button-solid:hover:before {
+      width: 100%;
+    }
+    #hero-1298 .cs-video-background {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    #hero-1298 .cs-video-background.fade-in {
+      opacity: 1;
+      z-index: 1;
+    }
+    #hero-1298 .cs-picture {
+      width: 100%;
+      /* 427px - 468px */
+      max-width: clamp(26.6875rem, 50vw, 29.25rem);
+      height: auto;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      z-index: 7;
+    }
+    #hero-1298 .cs-picture img {
+      width: 100%;
+      height: auto;
+    }
+    #hero-1298 .cs-floater {
+      width: 68.125rem;
+      height: auto;
+      opacity: 0.1;
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 4%;
+      z-index: 1;
+    }
+    #hero-1298 .cs-card-group {
+      width: 100%;
+      max-width: 80rem;
+      /* changes to -550px at tablet */
+      margin: 0 0 -28.125rem 0;
+      padding: 0 1rem;
+      /* prevents padding and border from affecting height and width */
+      background-color: var(--bodyBgColor);
+      box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      position: relative;
+      z-index: 15;
+    }
+    #hero-1298 .cs-item {
+      text-align: left;
+      list-style: none;
+      width: 100%;
+      border-bottom: 1px solid #2e2e2e;
+      box-sizing: border-box;
+      grid-column: span 12;
+      transition:
+        background-color 0.3s,
+        border-color 0.3s;
+    }
+    #hero-1298 .cs-item:last-of-type {
+      border-bottom: none;
+    }
+    #hero-1298 .cs-link {
+      text-decoration: none;
+      /* 24px - 60px top & Bottom */
+      /* 24px - 16px top & Bottom */
+      padding: clamp(1.5rem, 5.3vw, 3.75rem) clamp(1rem, 2.7vw, 2.5rem);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    #hero-1298 .cs-icon {
+      /* 32px - 40px */
+      height: clamp(2rem, 4vw, 2.5rem);
+      width: auto;
+      margin: 0 0 1rem 0;
+    }
+    #hero-1298 .cs-h3 {
+      /* 20px - 25px */
+      font-size: clamp(1.25rem, 2vw, 1.5625rem);
+      font-weight: 700;
+      text-align: inherit;
+      line-height: 1.2em;
+      margin: 0 0 0.75rem 0;
+      color: var(--headerColor);
+      transition: color 0.3s;
+    }
+    #hero-1298 .cs-item-text {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      text-align: inherit;
+      line-height: 1.5em;
+      margin: 0;
+      color: var(--bodyTextColor);
+    }
+    #hero-1298 .cs-background {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    #hero-1298 .cs-background:before {
+      /* background color overlay */
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: black;
+      opacity: 0.84;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    #hero-1298 .cs-background img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      /* Makes img tag act as a background image */
+      object-fit: cover;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #hero-1298 {
+      padding-bottom: 9.375rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5.625rem;
+    }
+    #hero-1298 .cs-container {
+      justify-content: flex-start;
+      flex-direction: row;
+    }
+    #hero-1298 .cs-content {
+      text-align: left;
+      width: 60%;
+      align-items: flex-start;
+    }
+    #hero-1298 .cs-picture {
+      width: 95%;
+      position: absolute;
+      bottom: -9.4375rem;
+      right: 0rem;
+    }
+    #hero-1298 .cs-floater {
+      display: block;
+    }
+    #hero-1298 .cs-card-group {
+      margin: 0 0 -21.875rem 0;
+      padding: 0;
+    }
+    #hero-1298 .cs-item {
+      grid-column: span 4;
+      border-bottom: none;
+      border-right: 1px solid #2e2e2e;
+    }
+    #hero-1298 .cs-item:nth-of-type(3) {
+      border-bottom: none;
+      border-right: none;
+    }
+    #hero-1298 .cs-background {
+      overflow: hidden;
+    }
+    #hero-1298 .cs-background:before {
+      opacity: 0.6;
+      background: black;
+    }
+  }
+  /* Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #hero-1298 .cs-item:hover {
+      background-color: #1a1a1a;
+      border-color: #1a1a1a;
+    }
+    #hero-1298 .cs-item:hover .cs-h3,
+    #hero-1298 .cs-item:hover .cs-item-text {
+      color: var(--bodyTextColorWhite);
+    }
+    #hero-1298 .cs-item:hover .cs-item-text {
+      opacity: 0.8;
+    }
+    #hero-1298 .cs-floater {
+      right: clamp(45%, 50vw, 55%);
+      top: auto;
+      bottom: 0;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const video = document.querySelector(".lazy-video");
+
+    if (video) {
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          const entry = entries[0]; // Only one video, so we check the first entry
+          if (entry.isIntersecting) {
+            const source = video.querySelector("source");
+            console.log(source.dataset.src);
+            if (source && source.dataset.src) {
+              source.src = source.dataset.src;
+              video.load();
+
+              // Ensure the video plays once loaded
+              video.addEventListener("canplaythrough", () => {
+                video
+                  .play()
+                  .catch((error) =>
+                    console.error("Video playback failed", error)
+                  );
+              });
+
+              video.classList.add("fade-in"); // Apply fade-in effect
+            }
+            observer.unobserve(video); // Stop observing after loading
+          }
+        },
+        { threshold: 0.5 } // Trigger when 50% visible
+      );
+
+      observer.observe(video);
+    }
+  });
+</script>

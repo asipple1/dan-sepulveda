@@ -1,0 +1,280 @@
+<!-- ============================================ --><!--              Who Works With Dan              --><!-- ============================================ -->
+<section id="why-choose-1630">
+  <div class="cs-container">
+    <div class="cs-flex">
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-8.jpg"
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-8.jpg"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-8.jpg"
+          alt="Dan Sepulveda meeting with clients"
+          width="608"
+          height="400"
+        />
+      </picture>
+      <div class="cs-content">
+        <span class="cs-topper">Who Works With Dan</span>
+        <h2 class="cs-title">
+          Buyers, Sellers & Investors – A One-Stop Real Estate & Mortgage Expert
+        </h2>
+        <p class="cs-text">
+          Dan Sepulveda is a licensed real estate agent and mortgage broker,
+          helping clients navigate buying, selling, and financing homes on Oahu
+          and beyond. Whether you're a first-time buyer, a homeowner looking to
+          sell, or an investor searching for opportunities, Dan provides expert
+          guidance every step of the way.
+        </p>
+      </div>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <h3 class="cs-h3">
+          <picture class="cs-wrapper">
+            <img
+              class="cs-h3-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chat-gold.svg"
+              alt="chat icon"
+              width="24"
+              height="24"
+            />
+          </picture>
+          Home Buyers
+        </h3>
+        <p class="cs-item-text">
+          Searching for your dream home? Dan helps buyers secure the best
+          properties and mortgage options with ease.
+        </p>
+      </li>
+      <li class="cs-item">
+        <h3 class="cs-h3">
+          <picture class="cs-wrapper">
+            <img
+              class="cs-h3-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/call-gold.svg"
+              alt="call icon"
+              width="24"
+              height="24"
+            />
+          </picture>
+          Home Sellers
+        </h3>
+        <p class="cs-item-text">
+          Sell your home quickly and for top dollar with Dan’s expert pricing,
+          marketing, and negotiation strategies.
+        </p>
+      </li>
+      <li class="cs-item">
+        <h3 class="cs-h3">
+          <picture class="cs-wrapper">
+            <img
+              class="cs-h3-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/money-gold.svg"
+              alt="money icon"
+              width="24"
+              height="24"
+            />
+          </picture>
+          Real Estate Investors
+        </h3>
+        <p class="cs-item-text">
+          Looking to build your portfolio? Dan helps investors find high-return
+          properties and the right financing solutions.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  /*-- -------------------------- -->
+<---       Why Choose Us        -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #why-choose-1630 {
+      padding: var(--sectionPadding);
+    }
+    #why-choose-1630 .cs-container {
+      width: 100%;
+      /* changes to 1280px at desktop */
+      max-width: 34.375rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 7vw, 4rem);
+    }
+    #why-choose-1630 .cs-flex {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 7vw, 4rem);
+    }
+    #why-choose-1630 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      max-width: 38rem;
+      /* prevents padding from affecting width and height */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: flex-start;
+    }
+    #why-choose-1630 .cs-text {
+      margin-bottom: 1rem;
+    }
+    #why-choose-1630 .cs-text:last-of-type {
+      margin-bottom: 0rem;
+    }
+    #why-choose-1630 .cs-picture {
+      display: block;
+      position: relative;
+      width: 100%;
+      max-width: 39.375rem;
+      /* chnages to auto at tablet */
+      height: 50vw;
+      /* removed at tablet */
+      max-height: 25rem;
+      /* clips img tag corners */
+      overflow: hidden;
+      /* sends it to the 2nd posiiton in the bottom */
+      order: 2;
+    }
+    #why-choose-1630 .cs-picture img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    #why-choose-1630 .cs-card-group {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: stretch;
+      /* 16px - 20px */
+      column-gap: clamp(1rem, 2.5vw, 2rem);
+      row-gap: 1.75rem;
+    }
+    #why-choose-1630 .cs-item {
+      list-style: none;
+      display: flex;
+      grid-column: span 12;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    #why-choose-1630 .cs-h3 {
+      /* 20px - 25px */
+      font-size: clamp(1.25rem, 3vw, 1.5625rem);
+      line-height: 1.2em;
+      font-weight: 700;
+      margin: 0;
+      color: var(--headerColor);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.75rem;
+      transition: color 0.3s;
+    }
+    #why-choose-1630 .cs-wrapper {
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid var(--primary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #why-choose-1630 .cs-h3-icon {
+      width: 1.5rem;
+      height: auto;
+      margin-top: 2px;
+      display: block;
+    }
+    #why-choose-1630 .cs-item-text {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      margin: 0;
+      color: var(--bodyTextColor);
+      transition:
+        color 0.3s,
+        opacity 0.3s;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #why-choose-1630 .cs-container {
+      max-width: 80rem;
+    }
+    #why-choose-1630 .cs-flex {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+    #why-choose-1630 .cs-content {
+      width: 50%;
+      /* 32px - 56px top and bottom */
+      padding: clamp(2rem, 4vw, 3.5rem) 0;
+      /* sends it to the left in the 1st position */
+      order: -1;
+      align-self: center;
+      flex: none;
+    }
+    #why-choose-1630 .cs-picture {
+      width: 47vw;
+      min-height: 25rem;
+      max-height: 100%;
+      height: auto;
+      position: relative;
+    }
+    #why-choose-1630 .cs-item {
+      grid-column: span 4;
+    }
+  }
+  /* Dark Mode */
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode #why-choose-1630 .cs-title,
+    body.dark-mode #why-choose-1630 .cs-text,
+    body.dark-mode #why-choose-1630 .cs-h3,
+    body.dark-mode #why-choose-1630 .cs-item-text {
+      color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #why-choose-1630 .cs-text,
+    body.dark-mode #why-choose-1630 .cs-item-text {
+      opacity: 0.8;
+    }
+    body.dark-mode #why-choose-1630 .cs-picture:before {
+      background-color: var(--accent);
+    }
+  }
+</style>
